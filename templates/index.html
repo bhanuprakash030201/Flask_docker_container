@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Demo App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Flask Message App</h2>
+        <form method="POST" class="card p-4 shadow-sm">
+            <div class="mb-3">
+                <label for="message" class="form-label">Enter a message:</label>
+                <input type="text" class="form-control" id="message" name="message" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        {% if message %}
+        <div class="alert alert-info mt-4" role="alert">
+            {{ message }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
