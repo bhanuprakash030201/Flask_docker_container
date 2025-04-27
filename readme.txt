@@ -139,4 +139,4 @@ docker start flask-container	---> Start it again
 docker logs flask-container	---> See the logs from the container
 docker images	---> List images
 docker rm flask-container	---> Remove a stopped container
-docker rmi flask-docker-app	---> Remove the image
+docker rmi flask-docker-app	---> Remove the image.
